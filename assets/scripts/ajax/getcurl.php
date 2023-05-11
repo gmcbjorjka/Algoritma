@@ -19,7 +19,7 @@ $response_array = json_decode($response, true);
 
 $onscreen = '<table class="table" width="100%">
                 <thead>
-                  <th>MESSAGE</th>
+                  <th>KODE BARANG</th>
                   <th>STATUS</th>
                   <th>COMMENT</th>
                   <th>TAG</th>
@@ -29,11 +29,11 @@ $onscreen = '<table class="table" width="100%">
 
 foreach ($response_array as $resp) {
   $onscreen .= '<tr>
-                <td>' . $resp['message'] . '</td>
-                <td>' . $resp['status'] . '</td>
-                <td>' . $resp['comment'] . '</td>
-                <td>' . $resp['tag'] . '</td>
-                <td>' . $resp['support'] . '</td>
+                <td>' . $resp['Kode Barang'] . '</td>
+                <td>' . $resp['Nama Barang'] . '</td>
+                <td>' . $resp['Harga Jual'] . '</td>
+                <td>' . $resp['Quantity'] . '</td>
+                <td>' . $resp['Total Asset'] . '</td>
               </tr>';
 }
 
